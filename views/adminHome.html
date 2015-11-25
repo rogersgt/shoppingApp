@@ -1,0 +1,29 @@
+<h1>Admin</h1>
+
+<h5>New Product</h5>
+<ul id="admin">
+<li><input type="text" name="" placeholder="enter product name" ng-model="product.name"></li>
+<li><input type="text" name="pic" placeholder="enter picture url" ng-model="product.url"></li>
+<li><input type="text" name="price" placeholder="enter price" ng-model="product.price"></li>
+<li><textarea name="description" rows="8" cols="40" placeholder="enter description" ng-model="product.description"></textarea></li>
+<li><button type="button" class="submit" ng-click="submitProduct(product)">Submit</button></li>
+</ul>
+
+<section>
+  <div class="count">
+    {{productCount(number)}}
+  </div>
+</section>
+
+  <h4>All Products</h4>
+  <section ng-repeat="product in Products">
+    <article class="product">
+      <h4>{{product.name}}</h4>
+      <h5 ng-dblclick="edit(product)">{{product.price | currency}}</h5>
+      <img src="{{product.url}}" alt="" />
+      <p>
+        {{product.description}}
+      </p>
+      <button type="button" name="addToCart" ng-click="deleteProduct(product)">Remove Product</button>
+    </article>
+  </section>

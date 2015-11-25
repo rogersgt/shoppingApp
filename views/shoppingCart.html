@@ -1,0 +1,12 @@
+<h1>My Cart</h1>
+<section ng-repeat="product in Cart">
+  <article class="product">
+    <h4>{{product.name}}</h4>
+    <h5>{{product.price | currency}}</h5>
+    <img src="{{product.url}}" alt="" />
+    <p>
+      {{product.description}}
+    </p>
+    <button type="button" class="removeFromCart(product)" ng-click="removeFromCart(product)">remove from cart</button>
+  </article>
+</section>

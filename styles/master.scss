@@ -1,0 +1,76 @@
+@import "variables.scss";
+
+////////////////////// General /////////////////////////
+body {
+  background-image: url('../assets/ampBackground.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: "marcellus sc";
+}
+
+input {
+  display: block;
+  background-color: gray;
+  color: white;
+  &:focus {
+    outline: none;
+  }
+}
+h1 {
+  font-size: 2em;
+}
+textarea {
+  background-color: gray;
+  color: white;
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  border: none;
+  border-radius: .5em;
+  background: linear-gradient(to bottom, $reddish, $lessRed, $reddish);
+  width: 30%;
+  &:hover {
+    background: linear-gradient(to bottom, $hover, $lessRed, $hover);
+  }
+}
+h3 {
+  text-align: right;
+  font-size: .8em;
+}
+//////////////////// customer homepage ////////////////
+.addToCart {
+  &:active {
+    background-color: $selected;
+  }
+}
+
+/////////// posts /////////////////////////
+article {
+  width: 50%;
+  margin: 0 auto;
+  background-color: $article;
+  border-radius: 5%;
+  padding: 3%;
+  margin-top: 3%;
+  img {
+    width: 30em;
+    margin-left: 2%;
+    border-radius: 5%;
+  }
+}
+/////////////// admin /////////////////
+h4 {
+  width: 20%;
+  margin: 0 auto;
+}
+.submit {
+  width: 10%;
+}
+#admin {
+  li {
+    display: block;
+  }
+}

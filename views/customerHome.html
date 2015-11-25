@@ -1,0 +1,15 @@
+<h1>String Shoppe</h1>
+<h3>The place for String Kings (and Queens)</h3>
+<hr>
+
+<section ng-repeat="product in Products">
+  <article class="product">
+    <h4>{{product.name}}</h4>
+    <h5>{{product.price | currency}}</h5>
+    <img src="{{product.url}}" alt="" />
+    <p>
+      {{product.description}}
+    </p>
+    <button type="button" class="addToCart" ng-click="addToCart(product)">add to cart</button>
+  </article>
+</section>

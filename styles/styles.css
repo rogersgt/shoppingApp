@@ -1,0 +1,59 @@
+body {
+  background-image: url("../assets/ampBackground.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: "marcellus sc"; }
+
+input {
+  display: block;
+  background-color: gray;
+  color: white; }
+  input:focus {
+    outline: none; }
+
+h1 {
+  font-size: 2em; }
+
+textarea {
+  background-color: gray;
+  color: white; }
+  textarea:focus {
+    outline: none; }
+
+button {
+  border: none;
+  border-radius: .5em;
+  background: linear-gradient(to bottom, #8f4a4a, #ff9595, #8f4a4a);
+  width: 30%; }
+  button:hover {
+    background: linear-gradient(to bottom, #c86666, #ff9595, #c86666); }
+
+h3 {
+  text-align: right;
+  font-size: .8em; }
+
+.addToCart:active {
+  background-color: #2da332; }
+
+article {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #616161;
+  border-radius: 5%;
+  padding: 3%;
+  margin-top: 3%; }
+  article img {
+    width: 30em;
+    margin-left: 2%;
+    border-radius: 5%; }
+
+h4 {
+  width: 20%;
+  margin: 0 auto; }
+
+.submit {
+  width: 10%; }
+
+#admin li {
+  display: block; }
